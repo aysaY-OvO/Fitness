@@ -1,0 +1,28 @@
+.btn {
+  display: inline-flex;
+
+  color: $color-default-white;
+
+  background-color: $color-transparent;
+  border: 4px solid $color-default-white;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+  font-family: $ff-default;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  &--red {
+    background-color: $color-default-red;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.6;
+  }
+}
