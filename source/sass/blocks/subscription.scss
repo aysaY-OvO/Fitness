@@ -1,0 +1,70 @@
+.subscription {
+  background-color: $color-light-grey;
+}
+
+.subscription__container {
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 120px;
+
+  &::after {
+    content: "";
+    background: url("../img/images/subscription-desktop.png") no-repeat;
+    width: 287px;
+    height: 386px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+    @include retina {
+      background: url("../img/images/subscription-desktop@2x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-1199 {
+    padding-top: 125px;
+
+    &::after {
+      width: 350px;
+      height: 410px;
+      bottom: -30px;
+      background: url("../img/images/subscription-tablet.png") no-repeat;
+
+      @include retina {
+        background: url("../img/images/subscription-tablet@2x.png") no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 92px;
+
+    &::after {
+      background-image: none;
+    }
+  }
+}
+
+.subscription h2 {
+  font-family: $ff-title;
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-size: 54px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1.6px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    letter-spacing: 1.3px;
+    margin-bottom: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+}

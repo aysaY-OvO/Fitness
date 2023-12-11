@@ -12,9 +12,6 @@
   font-size: 12px;
   text-transform: uppercase;
 
-  &--red {
-    background-color: $color-default-red;
-  }
 
   &:disabled {
     opacity: 0.5;

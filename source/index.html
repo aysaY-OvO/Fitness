@@ -59,8 +59,118 @@
       </div>
     </header>
     <main>
-      <section class="intro">
-        <div class="container"></div>
+      <section class="about">
+        <div class="about__container container">
+          <div class="about__text">
+            <h2>Тренажерный зал</h2>
+            <span>Просторный зал площадью 900&nbsp;кв/м</span>
+            <p>
+              Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p data-text="В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий."></p>
+          </div>
+          <div class="about__media">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="./img/images/about-desktop.webp 1x, ./img/images/about-desktop2x.webp 2x" width="660" height="401" type="image/webp">
+              <source media="(min-width: 768px)"
+                      srcset="./img/images/about-tablet.webp 1x, ./img/images/about-tablet@2x.webp 2x" width="678" height="345" type="image/webp">
+              <source media="(min-width: 280px)"
+                      srcset="./img/images/about-mobile.webp 1x, ./img/images/about-mobile@2x.webp 2x" width="320" height="313" type="image/webp">
+              <source media="(min-width: 768px)" srcset="./img/images/about-tablet.jpg 1x, ./img/images/about-tablet@2x.jpg 2x"  width="678" height="345">
+              <source media="(min-width: 280px)" srcset="./img/images/about-mobile.jpg 1x, ./img/images/about-mobile@2x.jpg 2x" width="320" height="313">
+              <img src="./img/images/about-desktop.jpg" alt="фото тренажерного зала" srcset="./img/images/about-desktop2x.jpg 2x" width="660" height="401">
+            </picture>
+            <button type="button" class="about__video" data-button="play-video" aria-label="включить видео">
+              <picture>
+                <source media="(min-width: 1200px)"
+                        srcset="./img/images/video-preview-desktop.webp 1x, ./img/images/video-preview-desktop@2x.webp 2x" width="364" height="228" type="image/webp">
+                <source media="(min-width: 768px)"
+                        srcset="./img/images/video-preview-tablet.webp 1x, ./img/images/video-preview-tablet@2x.webp 2x" width="266" height="167" type="image/webp">
+                <source media="(min-width: 280px)"
+                        srcset="./img/images/video-preview-mobile.webp 1x, ./img/images/video-preview-mobile@2x.webp 2x" width="320" height="167" type="image/webp">
+                <source media="(min-width: 768px)" srcset="./img/images/video-preview-tablet.jpg 1x, ./img/images/video-preview-tablet@2x.jpg 2x" width="266" height="167">
+                <source media="(min-width: 280px)" srcset="./img/images/video-preview-mobile.jpg 1x, ./img/images/video-preview-mobile@2x.jpg 2x" width="320" height="167">
+                <img src="./img/images/video-preview-desktop.jpg" srcset="./img/images/video-preview-desktop@2x.jpg 2x" width="364" height="228" alt="">
+              </picture>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscription">
+        <div class="subscription__container container">
+          <h2>Абонементы</h2>
+          <div class="subscription__tabs tabs" data-tabs="parent">
+            <div class="tabs__controls" data-tabs="controls">
+              <button class="tabs__control is-active" type="button" data-tabs="control">1 месяц</button>
+              <button class="tabs__control" type="button" data-tabs="control">6 месяцев</button>
+              <button class="tabs__control" type="button" data-tabs="control">12 месяцев</button>
+            </div>
+            <div class="tabs__content" data-tabs="content">
+              <ul class="tabs__element" data-tabs="element">
+                <li class="tabs__item">
+                  <h3>С тренером</h3>
+                  <p>12 занятий</p>
+                  <span data-price="5000">₽</span>
+                  <button type="button" class="btn">купить абонемент</button>
+                </li>
+                <li class="tabs__item">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00 </p>
+                  <span data-price="1700">₽</span>
+                  <button type="button" class="btn">купить абонемент</button>
+                </li>
+                <li class="tabs__item">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00 </p>
+                  <span data-price="2700">₽</span>
+                  <button type="button" class="btn">купить абонемент</button>
+                </li>
+              </ul>
+              <ul class="tabs__element" data-tabs="element">
+                <li class="tabs__item">
+                  <h3>С тренером</h3>
+                  <p>12 занятий</p>
+                  <span data-price="25000">₽</span>
+                  <button type="button" class="btn">купить абонемент</button>
+                </li>
+                <li class="tabs__item">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00 </p>
+                  <span data-price="8000">₽</span>
+                  <button type="button" class="btn">купить абонемент</button>
+                </li>
+                <li class="tabs__item">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00 </p>
+                  <span data-price="13000">₽</span>
+                  <button type="button" class="btn">купить абонемент</button>
+                </li>
+              </ul>
+              <ul class="tabs__element" data-tabs="element">
+                <li class="tabs__item">
+                  <h3>С тренером</h3>
+                  <p>12 занятий</p>
+                  <span data-price="57000">₽</span>
+                  <button type="button" class="btn">купить абонемент</button>
+                </li>
+                <li class="tabs__item">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00 </p>
+                  <span data-price="18000">₽</span>
+                  <button type="button" class="btn">купить абонемент</button>
+                </li>
+                <li class="tabs__item">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00 </p>
+                  <span data-price="28000">₽</span>
+                  <button type="button" class="btn">купить абонемент</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
