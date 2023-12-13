@@ -1,6 +1,6 @@
 .about__container {
   padding-top: 120px;
-  padding-bottom: 0;
+  padding-bottom: 5px;
   padding-left: 163px;
   display: grid;
   grid-template-columns: 375px auto;
@@ -16,14 +16,13 @@
   }
 
   @include vp-767 {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 53px;
+    padding: 53px 0 48px;
   }
 }
 
 .about__video {
   position: relative;
+  display: block;
   padding: 0;
   width: 364px;
   height: 228px;
@@ -94,6 +93,7 @@
 
   @include vp-767 {
     max-width: 430px;
+    justify-self: center;
     margin: 0 auto;
     width: 100%;
     bottom: 0;
@@ -190,6 +190,7 @@
   margin-top: 0;
   line-height: 1.5;
   letter-spacing: -0.1px;
+  font-weight: 300;
 
   &::after {
     content: attr(data-text);

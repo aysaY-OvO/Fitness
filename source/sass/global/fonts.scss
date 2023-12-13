@@ -1,20 +1,18 @@
 @font-face {
+  font-display: swap;
+  font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 600;
-  font-family: "Alumni Sans";
-
-  font-display: swap;
   src:
     url("../fonts/AlumniSans-Semibold.woff2") format("woff2"),
     url("../fonts/AlumniSans-Semibold.woff") format("woff");
 }
 
 @font-face {
+  font-display: swap;
+  font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 800;
-  font-family: "Alumni Sans";
-
-  font-display: swap;
   src:
     url("../fonts/AlumniSans-Extrabold.woff2") format("woff2"),
     url("../fonts/AlumniSans-Extrabold.woff") format("woff");

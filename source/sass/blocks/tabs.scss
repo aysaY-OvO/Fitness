@@ -3,40 +3,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
-  [data-tabs="accordion"] {
-    @media screen and (max-width: 767px) {
-      margin: 10px 2% 0;
-    }
-
-    > .tabs__control.is-active {
-      pointer-events: auto;
-    }
-
-    > .tabs__control {
-      @media screen and (max-width: 767px) {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-      }
-    }
-  }
-
-  [data-tabs="accordion"].is-active {
-    > .tabs__control {
-      opacity: 1;
-    }
-  }
-
-  &--unset .tabs__content {
-    height: 100px;
-  }
-
-  &--unset .tabs__element {
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
 }
 
 .tabs__controls {
@@ -98,39 +64,52 @@
 .tabs__content {
   margin-bottom: 40px;
   width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
 
   transition: height 0.3s;
 }
 
 .tabs__element {
-  display: none;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transition: opacity .3s ease-in, visibility .3s ease-in;
+  width: 100%;
+  list-style-type: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 40px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media screen and (max-width: 1500px) {
+    justify-content: space-between;
+  }
 
   &.is-active {
-    max-width: 1160px;
-    list-style-type: none;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 15px;
-    row-gap: 40px;
-    margin: 0 auto;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @include vp-1199 {
+    flex-direction: column;
+    padding: 0 118px;
+    justify-content: center;
+  }
+
+  @include vp-767 {
     padding: 0;
-
-    @include vp-1199 {
-      flex-direction: column;
-      padding: 0 118px;
-    }
-
-    @include vp-767 {
-      padding: 0;
-      row-gap: 35px;
-    }
+    row-gap: 35px;
   }
 }
 
 .tabs__item {
   position: relative;
-  z-index: 100;
   display: flex;
   row-gap: 15px;
   padding: 65px 76px;
@@ -149,7 +128,7 @@
 
     .btn {
       border: none;
-      padding: 26px 42px;
+      padding: 26px 46px;
       background: $tabs-gradient-button;
       color: $color-default-white;
       opacity: 1;
@@ -161,7 +140,7 @@
 
     .btn {
       border: none;
-      padding: 26px 42px;
+      padding: 26px 46px;
       background: $tabs-gradient-button;
       color: $color-default-white;
       opacity: 1;
@@ -175,11 +154,23 @@
   @include vp-1199 {
     max-width: 100%;
     padding: 68px 118px;
+
+    @include hover-focus {
+      .btn {
+        padding: 26px 42px;
+      }
+    }
   }
 
   @include vp-767 {
     padding: 55px 42px;
     min-height: 384px;
+
+    @include hover-focus {
+      .btn {
+        padding: 26px 42px;
+      }
+    }
   }
 }
 

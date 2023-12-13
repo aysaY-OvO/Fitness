@@ -1,20 +1,15 @@
 .subscription {
   background-color: $color-light-grey;
-}
-
-.subscription__container {
   position: relative;
-  padding-top: 140px;
-  padding-bottom: 120px;
 
   &::after {
     content: "";
     background: url("../img/images/subscription-desktop.png") no-repeat;
     width: 287px;
-    height: 386px;
+    height: 430px;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -85px;
     z-index: 1;
 
     @include retina {
@@ -24,12 +19,10 @@
   }
 
   @include vp-1199 {
-    padding-top: 125px;
-
     &::after {
       width: 350px;
       height: 410px;
-      bottom: -30px;
+      bottom: -87px;
       background: url("../img/images/subscription-tablet.png") no-repeat;
 
       @include retina {
@@ -40,11 +33,24 @@
   }
 
   @include vp-767 {
-    padding-top: 92px;
-
     &::after {
-      background-image: none;
+      display: none;
     }
+  }
+}
+
+.subscription__container {
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 80px;
+
+  @include vp-1199 {
+    padding-top: 125px;
+    padding-bottom: 60px;
+  }
+
+  @include vp-767 {
+    padding-top: 92px;
   }
 }
 

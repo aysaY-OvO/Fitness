@@ -9,6 +9,7 @@
     <link rel="preload" as="font" href="./fonts/RobotoCondensed-Light.woff2" crossorigin="">
     <link rel="preload" as="font" href="./fonts/RobotoCondensed-Regular.woff2" crossorigin="">
     <link rel="preload" as="font" href="./fonts/RobotoCondensed-Bold.woff2" crossorigin="">
+    <link rel="preload" as="font" href="./fonts/Rouble.woff2" crossorigin="">
     <meta name="description" content="Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.">
     <title>SUPERGYM</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -43,7 +44,7 @@
               <p>омск</p>
               <h1>Фитнес <br> центр</h1>
             </div>
-            <button class="header__button btn" type="button">Купить абонемент</button>
+            <a href="#subscription" class="header__button btn">Купить абонемент</a>
           </div>
           <div class="header__image">
             <picture>
@@ -98,10 +99,10 @@
         </div>
       </section>
 
-      <section class="subscription">
+      <section class="subscription" id="subscription">
         <div class="subscription__container container">
           <h2>Абонементы</h2>
-          <div class="subscription__tabs tabs" data-tabs="parent">
+          <div class="subscription__tabs tabs" data-tabs="parent" data-delay="300">
             <div class="tabs__controls" data-tabs="controls">
               <button class="tabs__control is-active" type="button" data-tabs="control">1 месяц</button>
               <button class="tabs__control" type="button" data-tabs="control">6 месяцев</button>
@@ -113,19 +114,19 @@
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
                   <span data-price="5000">₽</span>
-                  <button type="button" class="btn">купить абонемент</button>
+                  <a href="#" class="btn">купить абонемент</a>
                 </li>
                 <li class="tabs__item">
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00 </p>
                   <span data-price="1700">₽</span>
-                  <button type="button" class="btn">купить абонемент</button>
+                  <a href="#" class="btn">купить абонемент</a>
                 </li>
                 <li class="tabs__item">
                   <h3>Полный день</h3>
                   <p>с 8:00 до 22:00 </p>
                   <span data-price="2700">₽</span>
-                  <button type="button" class="btn">купить абонемент</button>
+                  <a href="#" class="btn">купить абонемент</a>
                 </li>
               </ul>
               <ul class="tabs__element" data-tabs="element">
@@ -133,19 +134,19 @@
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
                   <span data-price="25000">₽</span>
-                  <button type="button" class="btn">купить абонемент</button>
+                  <a href="#" class="btn">купить абонемент</a>
                 </li>
                 <li class="tabs__item">
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00 </p>
                   <span data-price="8000">₽</span>
-                  <button type="button" class="btn">купить абонемент</button>
+                  <a href="#" class="btn">купить абонемент</a>
                 </li>
                 <li class="tabs__item">
                   <h3>Полный день</h3>
                   <p>с 8:00 до 22:00 </p>
                   <span data-price="13000">₽</span>
-                  <button type="button" class="btn">купить абонемент</button>
+                  <a href="#" class="btn">купить абонемент</a>
                 </li>
               </ul>
               <ul class="tabs__element" data-tabs="element">
@@ -153,22 +154,61 @@
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
                   <span data-price="57000">₽</span>
-                  <button type="button" class="btn">купить абонемент</button>
+                  <a href="#" class="btn">купить абонемент</a>
                 </li>
                 <li class="tabs__item">
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00 </p>
                   <span data-price="18000">₽</span>
-                  <button type="button" class="btn">купить абонемент</button>
+                  <a href="#" class="btn">купить абонемент</a>
                 </li>
                 <li class="tabs__item">
                   <h3>Полный день</h3>
                   <p>с 8:00 до 22:00 </p>
                   <span data-price="28000">₽</span>
-                  <button type="button" class="btn">купить абонемент</button>
+                  <a href="#" class="btn">купить абонемент</a>
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo">
+        <div class="promo__container container">
+          <h2 class="visually-hidden">Промо</h2>
+          <div class="promo__poster">
+            <div class="promo__content">
+              <h3>
+                SUPER<br>
+                GAMES
+              </h3>
+              <dl>
+                <dt>Дата</dt>
+                <dd>
+                  7
+                  <span>
+                    марта<br>
+                    2019
+                  </span>
+                </dd>
+                <dt>Время</dt>
+                <dd>12:00</dd>
+              </dl>
+              <p>Ежегодные соревнования по&nbsp;CrossFit</p>
+              <a href="#" class="promo__btn btn">заполнить заявку</a>
+            </div>
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="./img/images/promo-desktop.webp 1x, ./img/images/promo-desktop2x.webp 2x" width="660" height="500" type="image/webp">
+              <source media="(min-width: 416px)"
+                      srcset="./img/images/promo-tablet.webp 1x, ./img/images/promo-tablet@2x.webp 2x" width="386" height="292" type="image/webp">
+              <source media="(min-width: 280px)"
+                      srcset="./img/images/promo-mobile.webp 1x, ./img/images/promo-mobile@2x.webp 2x" width="290" height="292" type="image/webp">
+              <source media="(min-width: 416px)" srcset="./img/images/promo-tablet.jpg 1x, ./img/images/promo-tablet@2x.jpg 2x" width="386" height="292">
+              <source media="(min-width: 386px)" srcset="./img/images/promo-mobile.jpg 1x, ./img/images/promo-mobile@2x.jpg 2x" width="290" height="292">
+              <img src="./img/images/promo-desktop.jpg" srcset="./img/images/promo-desktop2x.jpg 2x" width="660" height="500" alt="">
+            </picture>
           </div>
         </div>
       </section>
