@@ -1,0 +1,44 @@
+.stock__container {
+  padding-top: 105px;
+  padding-bottom: 110px;
+
+  @include vp-1199 {
+    padding-top: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 65px;
+  }
+}
+
+.stock__container h2 {
+  text-align: center;
+  font-family: $ff-title;
+  font-size: 54px;
+  font-weight: 600;
+  margin-top: 0;
+  letter-spacing: 1.6px;
+  line-height: 1;
+  margin-bottom: 40px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    margin-bottom: 42px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    margin-bottom: 45px;
+  }
+}
+
+.stock__content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}

@@ -120,28 +120,28 @@
   background-color: $color-default-white;
 
   &:focus-within {
-    background: $tabs-gradient-border;
+    background: $gradient-tabs-border;
   }
 
   @include hover {
-    background: $tabs-gradient-border;
+    background: $gradient-tabs-border;
 
     .btn {
       border: none;
-      padding: 26px 46px;
-      background: $tabs-gradient-button;
+      padding: 20px 46px;
+      background: $gradient-tabs-button;
       color: $color-default-white;
       opacity: 1;
     }
   }
 
   @include hover-focus {
-    background: $tabs-gradient-border;
+    background: $gradient-tabs-border;
 
     .btn {
       border: none;
-      padding: 26px 46px;
-      background: $tabs-gradient-button;
+      padding: 20px 46px;
+      background: $gradient-tabs-button;
       color: $color-default-white;
       opacity: 1;
     }
@@ -157,7 +157,7 @@
 
     @include hover-focus {
       .btn {
-        padding: 26px 42px;
+        padding: 20px 42px;
       }
     }
   }
@@ -168,7 +168,7 @@
 
     @include hover-focus {
       .btn {
-        padding: 26px 42px;
+        padding: 20px 42px;
       }
     }
   }
@@ -240,7 +240,7 @@
   align-content: center;
   border: 2px solid $color-dark-blue;
   color: $color-dark-blue;
-  padding: 24px 44px;
+  padding: 18px 44px;
   margin-bottom: 5px;
   width: 100%;
   transition: 0.4s color;
@@ -248,18 +248,18 @@
 
   @include hover-focus {
     border: none;
-    padding: 26px 46px;
-    background: $tabs-gradient-button;
+    padding: 20px 46px;
+    background: $gradient-tabs-button;
     color: $color-default-white;
     opacity: 1;
   }
 
   @include vp-1199 {
     margin-bottom: 0;
-    padding: 24px 40px;
+    padding: 18px 40px;
 
     @include hover-focus {
-      padding: 26px 42px;
+      padding: 20px 42px;
     }
   }
 }

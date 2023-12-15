@@ -1,5 +1,5 @@
 .header {
-  background: $header-gradient;
+  background: $gradient-header;
   padding-bottom: 40px;
   padding-top: 34px;
 
@@ -234,14 +234,14 @@
   justify-content: center;
   justify-self: center;
   align-self: start;
-  padding: 20px 55px;
+  padding: 15px 55px;
   letter-spacing: 0.6px;
   grid-column: 2;
   margin-right: 5px;
   margin-bottom: 5px;
 
   @include vp-1199 {
-    padding: 20px 32px;
+    padding: 15px 32px;
     margin-right: 24px;
     margin-bottom: 0;
   }
