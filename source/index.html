@@ -319,9 +319,104 @@
             </div>
           </div>
         </section>
+
+        <section class="review">
+          <div class="review__container container">
+            <h2>Отзывы</h2>
+          </div>
+        </section>
+
+        <section class="contacts">
+          <div class="contacts__container container">
+            <div class="contacts__form" data-form-validate>
+              <h2>Бесплатное занятие</h2>
+              <form action="https://echo.htmlacademy.ru/">
+                <div class="contacts__inputs-wrapper">
+                  <div class="contacts__input contacts__name custom-input" data-message-base="Обязательное поле" data-required data-validate-type="text">
+                    <label class="visually-hidden" for="name">имя</label>
+                    <input type="text" name="name" id="name" placeholder="Имя" autocomplete="off" required>
+                  </div>
+                  <div class="contacts__input contacts__phone custom-input" data-message-base="Обязательное поле" data-required data-validate-type="phone">
+                    <label class="visually-hidden" for="phone">телефон</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Телефон" autocomplete="off" required>
+                  </div>
+                </div>
+                <button class="contacts__btn btn" type="submit">отправить</button>
+              </form>
+            </div>
+            <address class="contacts__address">
+              <h2>Контакты</h2>
+              <div class="contacts__content">
+                <div class="contacts__text">
+                  <p>Адрес:</p>
+                  <span>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</span>
+                  <p>График работы:</p>
+                  <span>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</span>
+                </div>
+                <div class="contacts__links">
+                  <p>Телефон:</p>
+                  <a href="tel:88005555555"><nobr>8-800-555-55-55</nobr></a>
+                  <p>Email:</p>
+                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </div>
+              </div>
+            </address>
+          </div>
+        </section>
       </main>
       <footer class="footer">
-        <div class="container"></div>
+        <div class="footer__container container">
+          <ul class="footer__nav-list">
+            <li class="footer__logo" data-order="1">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/svg/logotype.svg" width="88" height="32">
+                  <source media="(min-width: 768px)" srcset="./img/svg/logotype-tablet.svg" width="82" height="18">
+                  <source media="(min-width: 280px)" srcset="./img/svg/logotype-mobile.svg" width="68" height="15">
+                  <img src="./img/svg/logotype.svg" width="122" height="22" alt="логотип 'Supergym'">
+                </picture>
+              </a>
+            </li>
+            <li data-order="3">
+              <a href="#">Услуги</a>
+            </li>
+            <li data-order="5">
+              <a href="#">Абонементы</a>
+            </li>
+            <li data-order="2">
+              <a href="#">Акции</a>
+            </li>
+            <li data-order="4">
+              <a href="#">Тренеры</a>
+            </li>
+            <li data-order="6">
+              <a href="#">Расписание</a>
+            </li>
+          </ul>
+          <ul class="footer__social-list">
+            <li>
+              <a href="#">
+                <svg width="25" height="25">
+                  <use xlink:href="./img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="25" height="25">
+                  <use xlink:href="./img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="25" height="25">
+                  <use xlink:href="./img/sprite.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
 

@@ -1,0 +1,14 @@
+.review__container {
+  height: 450px;
+  padding-bottom: 120px;
+  background-color: $color-blue;
+
+  @include vp-1199 {
+    height: 398px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 0;
+    height: 420px;
+  }
+}
