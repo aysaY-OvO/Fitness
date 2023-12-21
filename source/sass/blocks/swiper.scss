@@ -59,6 +59,7 @@
 
   &::after {
     content: attr(data-name);
+    display: block;
     font-size: 18px;
     font-weight: 700;
     color: $color-default-white;
@@ -70,19 +71,13 @@
 
   @include focus {
     &::after {
-      content: "";
+      display: none;
     }
   }
 
   @include hover {
     &::after {
-      content: "";
-    }
-  }
-
-  @include hover-focus {
-    &::after {
-      content: "";
+      display: none;
     }
   }
 
