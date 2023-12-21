@@ -3,6 +3,7 @@
 }
 
 .footer__container {
+  position: relative;
   padding-top: 42px;
   padding-bottom: 50px;
   display: flex;
@@ -14,27 +15,42 @@
 
   @include vp-767 {
     flex-direction: column;
-    row-gap: 33px;
+    row-gap: 25px;
   }
 }
 
 .footer__logo {
-  padding-top: 10px;
-  margin-right: 240px;
-
+  margin-right: 10px;
+  padding-top: 1px;
   @media screen and (min-width: 1200px) and (max-width: 1365px) {
-    margin-right: 160px;
+    margin-right: 60px;
   }
 
   @include vp-1199 {
     padding-top: 5px;
-    margin-right: 33px;
+    margin-right: 10px;
   }
 
   @include vp-767 {
+    position: absolute;
+    top: 50px;
     padding: 0;
     margin-right: 0;
-    order: 1;
+  }
+}
+
+.footer__logo img {
+  width: 88px;
+  height: 32px;
+
+  @include vp-1199 {
+    width: 82px;
+    height: 18px;
+  }
+
+  @include vp-767 {
+    width: 68px;
+    height: 15px;
   }
 }
 
@@ -49,52 +65,56 @@
   }
 }
 
-.footer__nav-list {
+.footer__site-list {
   list-style-type: none;
   margin: 0;
   display: flex;
-  column-gap: 40px;
+  flex-wrap: wrap;
+  column-gap: 42px;
+  row-gap: 10px;
   padding-left: 0;
+  max-width: 800px;
+
+  @media screen and (min-width: 1200px) and (max-width: 1365px) {
+    max-width: 650px;
+  }
 
   @include vp-1199 {
-    column-gap: 30px;
+    padding-top: 3px;
+    column-gap: 31px;
+    max-width: 400px;
+
+    @media screen and (min-width: 900px) and (max-width: 1199px) {
+      max-width: 500px;
+    }
   }
 
   @include vp-767 {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    display: block;
+    columns: 2;
     row-gap: 15px;
     column-gap: 30px;
     max-width: 350px;
+  }
+}
 
-    [data-order="1"] {
-      order: 1;
+.footer__site-link {
+  @include vp-767 {
+    &:first-of-type {
+      &::before {
+        content: "";
+        display: block;
+        height: 2.5em;
+      }
     }
 
-    [data-order="2"] {
-      order: 2;
-    }
-
-    [data-order="3"] {
-      order: 3;
-    }
-
-    [data-order="4"] {
-      order: 4;
-    }
-
-    [data-order="5"] {
-      order: 5;
-    }
-
-    [data-order="6"] {
-      order: 6;
+    &:not(:last-of-type) {
+      margin-bottom: 13px;
     }
   }
 }
 
-.footer__nav-list a {
+.footer__site-list a {
   color: $color-default-white;
   font-size: 14px;
   letter-spacing: 0;
@@ -109,5 +129,12 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   column-gap: 11px;
+  row-gap: 10px;
+  max-width: 100px;
+
+  @include vp-767 {
+    max-width: 100%;
+  }
 }

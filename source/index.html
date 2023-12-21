@@ -17,44 +17,41 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__container container">
-          <div class="header__links">
-            <div class="header__logo">
-              <a href="#">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/svg/logotype.svg" width="122" height="22">
-                  <source media="(min-width: 768px)" srcset="./img/svg/logotype-tablet.svg" width="82" height="17">
-                  <source media="(min-width: 280px)" srcset="./img/svg/logotype-mobile.svg" width="68" height="24">
+        <div class="header__blur">
+          <div class="header__container container">
+            <div class="header__links">
+              <div class="header__logo">
+                <a href="#">
                   <img src="./img/svg/logotype.svg" width="122" height="22" alt="логотип 'Supergym'">
-                </picture>
-              </a>
-            </div>
-            <div class="header__phone">
-              <a href="tel:88005555555">8-800-555-55-55</a>
-            </div>
-          </div>
-          <div class="header__content">
-            <div class="header__text">
-              <ul class="header__tags-list">
-                <li>Тренажёрный зал</li>
-                <li>Групповые занятия</li>
-                <li>Кардио-зона</li>
-              </ul>
-              <div class="header__title">
-                <p>омск</p>
-                <h1>Фитнес <br> центр</h1>
+                </a>
               </div>
-              <a href="#subscription" class="header__button btn">Купить абонемент</a>
+              <div class="header__phone">
+                <a href="tel:88005555555">8-800-555-55-55</a>
+              </div>
             </div>
-            <div class="header__image">
-              <picture>
-                <source media="(min-width: 1200px)"
-                        srcset="./img/images/header-photo-desktop.webp 1x, ./img/images/header-photo-desktop@2x.webp 2x" type="image/webp" width="500" height="556">
-                <source media="(min-width: 768px)"
-                        srcset="./img/images/header-photo-tablet.webp 1x, ./img/images/header-photo-tablet@2x.webp 2x" type="image/webp" width="324" height="390">
-                <source media="(min-width: 768px)" srcset="./img/images/header-photo-tablet.jpg 1x, ./img/images/header-photo-tablet@2x.jpg 2x" width="324" height="390">
-                <img src="./img/images/header-photo-desktop.jpg" srcset="./img/images/header-photo-desktop@2x.jpg 2x" alt="" width="500" height="556">
-              </picture>
+            <div class="header__content">
+              <div class="header__text">
+                <ul class="header__tags-list">
+                  <li>Тренажёрный зал</li>
+                  <li>Групповые занятия</li>
+                  <li>Кардио-зона</li>
+                </ul>
+                <div class="header__title">
+                  <p>омск</p>
+                  <h1>Фитнес <br> центр</h1>
+                </div>
+                <a href="#subscription" class="header__button btn">Купить абонемент</a>
+              </div>
+              <div class="header__image">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                          srcset="./img/images/header-photo-desktop.webp 1x, ./img/images/header-photo-desktop@2x.webp 2x" type="image/webp" width="500" height="556">
+                  <source media="(min-width: 768px)"
+                          srcset="./img/images/header-photo-tablet.webp 1x, ./img/images/header-photo-tablet@2x.webp 2x" type="image/webp" width="324" height="390">
+                  <source media="(min-width: 768px)" srcset="./img/images/header-photo-tablet.jpg 1x, ./img/images/header-photo-tablet@2x.jpg 2x" width="324" height="390">
+                  <img src="./img/images/header-photo-desktop.jpg" srcset="./img/images/header-photo-desktop@2x.jpg 2x" alt="" width="500" height="556">
+                </picture>
+              </div>
             </div>
           </div>
         </div>
@@ -215,15 +212,199 @@
 
         <section class="trainers">
           <div class="trainers__container container">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+            <h2>Тренеры</h2>
+            <div class="trainers__inner">
+              <div class="trainers__swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide focus-visible" data-name="Анна Павлова" tabindex="0">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                              srcset="img/images/1-trainer-desktop.webp 1x, img/images/1-trainer-desktop@2x.webp 2x" width="260" height="294" type="image/webp">
+                      <source media="(min-width: 768px)"
+                              srcset="img/images/1-trainer-desktop.webp 1x, img/images/1-trainer-desktop@2x.webp 2x" width="268" height="294" type="image/webp">
+                      <source media="(min-width: 280px)"
+                              srcset="img/images/1-trainer-desktop.webp 1x, img/images/1-trainer-desktop@2x.webp 2x" width="226" height="274" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/images/1-trainer-desktop.jpg 1x, img/images/1-trainer-desktop@2x.jpg 2x" width="268" height="294">
+                      <source media="(min-width: 280px)" srcset="img/images/1-trainer-desktop.jpg 1x, img/images/1-trainer-desktop@2x.jpg 2x" width="226" height="274">
+                      <img src="img/images/1-trainer-desktop.jpg" srcset="img/images/1-trainer-desktop@2x.jpg 2x" width="260" height="294" alt="тренер Анна Павлова">
+                    </picture>
+                    <div class="trainers__back">
+                      <h3>Анна Павлова</h3>
+                      <span>CrossFit</span>
+                      <ul class="trainers__peculiarity">
+                        <li>Certified Level&nbsp;3 Trainer</li>
+                        <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                        <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide focus-visible" data-name="Алексей Лавров" tabindex="0">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                              srcset="./img/images/2-trainer-desktop.webp 1x, ./img/images/2-trainer-desktop@2x.webp 2x" width="260" height="294" type="image/webp">
+                      <source media="(min-width: 768px)"
+                              srcset="./img/images/2-trainer-desktop.webp 1x, ./img/images/2-trainer-desktop@2x.webp 2x" width="268" height="294" type="image/webp">
+                      <source media="(min-width: 280px)"
+                              srcset="./img/images/2-trainer-desktop.webp 1x, ./img/images/2-trainer-desktop@2x.webp 2x" width="226" height="274" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="./img/images/2-trainer-desktop.jpg 1x, ./img/images/2-trainer-desktop@2x.jpg 2x" width="268" height="294">
+                      <source media="(min-width: 280px)" srcset="./img/images/2-trainer-desktop.jpg 1x, ./img/images/2-trainer-desktop@2x.jpg 2x" width="226" height="274">
+                      <img src="./img/images/2-trainer-desktop.jpg" srcset="./img/images/2-trainer-desktop@2x.jpg 2x" width="260" height="294" alt="тренер Алексей Лавров">
+                    </picture>
+                    <div class="trainers__back">
+                      <h3>Алексей Лавров</h3>
+                      <span>CrossFit</span>
+                      <ul class="trainers__peculiarity">
+                        <li>Certified Level&nbsp;3 Trainer</li>
+                        <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                        <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide focus-visible" data-name="Александр Пашков" tabindex="0">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                              srcset="./img/images/3-trainer-desktop.webp 1x, ./img/images/3-trainer-desktop@2x.webp 2x" width="260" height="294" type="image/webp">
+                      <source media="(min-width: 768px)"
+                              srcset="./img/images/3-trainer-desktop.webp 1x, ./img/images/3-trainer-desktop@2x.webp 2x" width="268" height="294" type="image/webp">
+                      <source media="(min-width: 280px)"
+                              srcset="./img/images/3-trainer-desktop.webp 1x, ./img/images/3-trainer-desktop@2x.webp 2x" width="226" height="274" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="./img/images/3-trainer-desktop.png 1x, ./img/images/3-trainer-desktop@2x.png 2x" width="268" height="294">
+                      <source media="(min-width: 280px)" srcset="./img/images/3-trainer-desktop.png 1x, ./img/images/3-trainer-desktop@2x.png 2x" width="226" height="274">
+                      <img src="./img/images/3-trainer-desktop.png" srcset="./img/images/3-trainer-desktop@2x.png 2x" width="260" height="294" alt="тренер Александр Пашков">
+                    </picture>
+                    <div class="trainers__back">
+                      <h3>Александр Пашков</h3>
+                      <span>CrossFit</span>
+                      <ul class="trainers__peculiarity">
+                        <li>Certified Level&nbsp;3 Trainer</li>
+                        <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                        <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide focus-visible" data-name="Мария Кетова" tabindex="0">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                              srcset="img/images/4-trainer-desktop.webp 1x, img/images/4-trainer-desktop2x.webp 2x" width="260" height="294" type="image/webp">
+                      <source media="(min-width: 768px)"
+                              srcset="img/images/4-trainer-desktop.webp 1x, img/images/4-trainer-desktop2x.webp 2x" width="268" height="294" type="image/webp">
+                      <source media="(min-width: 280px)"
+                              srcset="img/images/4-trainer-desktop.webp 1x, img/images/4-trainer-desktop2x.webp 2x" width="226" height="274" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/images/4-trainer-desktop.jpg 1x, img/images/4-trainer-desktop2x.jpg 2x" width="268" height="294">
+                      <source media="(min-width: 280px)" srcset="img/images/4-trainer-desktop.jpg 1x, img/images/4-trainer-desktop2x.jpg 2x" width="226" height="274">
+                      <img src="img/images/4-trainer-desktop.jpg" srcset="img/images/4-trainer-desktop2x.jpg 2x" width="260" height="294" alt="тренер Мария Кетова">
+                    </picture>
+                    <div class="trainers__back">
+                      <h3>Мария Кетова</h3>
+                      <span>CrossFit</span>
+                      <ul class="trainers__peculiarity">
+                        <li>Certified Level&nbsp;3 Trainer</li>
+                        <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                        <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide focus-visible" data-name="Анна Павлова" tabindex="0">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                              srcset="img/images/1-trainer-desktop.webp 1x, img/images/1-trainer-desktop@2x.webp 2x" width="260" height="294" type="image/webp">
+                      <source media="(min-width: 768px)"
+                              srcset="img/images/1-trainer-desktop.webp 1x, img/images/1-trainer-desktop@2x.webp 2x" width="268" height="294" type="image/webp">
+                      <source media="(min-width: 280px)"
+                              srcset="img/images/1-trainer-desktop.webp 1x, img/images/1-trainer-desktop@2x.webp 2x" width="226" height="274" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/images/1-trainer-desktop.jpg 1x, img/images/1-trainer-desktop@2x.jpg 2x" width="268" height="294">
+                      <source media="(min-width: 280px)" srcset="img/images/1-trainer-desktop.jpg 1x, img/images/1-trainer-desktop@2x.jpg 2x" width="226" height="274">
+                      <img src="img/images/1-trainer-desktop.jpg" srcset="img/images/1-trainer-desktop@2x.jpg 2x" width="260" height="294" alt="тренер Анна Павлова">
+                    </picture>
+                    <div class="trainers__back">
+                      <h3>Анна Павлова</h3>
+                      <span>CrossFit</span>
+                      <ul class="trainers__peculiarity">
+                        <li>Certified Level&nbsp;3 Trainer</li>
+                        <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                        <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide focus-visible" data-name="Алексей Лавров" tabindex="0">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                              srcset="./img/images/2-trainer-desktop.webp 1x, ./img/images/2-trainer-desktop@2x.webp 2x" width="260" height="294" type="image/webp">
+                      <source media="(min-width: 768px)"
+                              srcset="./img/images/2-trainer-desktop.webp 1x, ./img/images/2-trainer-desktop@2x.webp 2x" width="268" height="294" type="image/webp">
+                      <source media="(min-width: 280px)"
+                              srcset="./img/images/2-trainer-desktop.webp 1x, ./img/images/2-trainer-desktop@2x.webp 2x" width="226" height="274" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="./img/images/2-trainer-desktop.jpg 1x, ./img/images/2-trainer-desktop@2x.jpg 2x" width="268" height="294">
+                      <source media="(min-width: 280px)" srcset="./img/images/2-trainer-desktop.jpg 1x, ./img/images/2-trainer-desktop@2x.jpg 2x" width="226" height="274">
+                      <img src="./img/images/2-trainer-desktop.jpg" srcset="./img/images/2-trainer-desktop@2x.jpg 2x" width="260" height="294" alt="тренер Алексей Лавров">
+                    </picture>
+                    <div class="trainers__back">
+                      <h3>Алексей Лавров</h3>
+                      <span>CrossFit</span>
+                      <ul class="trainers__peculiarity">
+                        <li>Certified Level&nbsp;3 Trainer</li>
+                        <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                        <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide focus-visible" data-name="Александр Пашков" tabindex="0">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                              srcset="./img/images/3-trainer-desktop.webp 1x, ./img/images/3-trainer-desktop@2x.webp 2x" width="260" height="294" type="image/webp">
+                      <source media="(min-width: 768px)"
+                              srcset="./img/images/3-trainer-desktop.webp 1x, ./img/images/3-trainer-desktop@2x.webp 2x" width="268" height="294" type="image/webp">
+                      <source media="(min-width: 280px)"
+                              srcset="./img/images/3-trainer-desktop.webp 1x, ./img/images/3-trainer-desktop@2x.webp 2x" width="226" height="274" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="./img/images/3-trainer-desktop.png 1x, ./img/images/3-trainer-desktop@2x.png 2x" width="268" height="294">
+                      <source media="(min-width: 280px)" srcset="./img/images/3-trainer-desktop.png 1x, ./img/images/3-trainer-desktop@2x.png 2x" width="226" height="274">
+                      <img src="./img/images/3-trainer-desktop.png" srcset="./img/images/3-trainer-desktop@2x.png 2x" width="260" height="294" alt="тренер Александр Пашков">
+                    </picture>
+                    <div class="trainers__back">
+                      <h3>Александр Пашков</h3>
+                      <span>CrossFit</span>
+                      <ul class="trainers__peculiarity">
+                        <li>Certified Level&nbsp;3 Trainer</li>
+                        <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                        <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide focus-visible" data-name="Мария Кетова" tabindex="0">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                              srcset="img/images/4-trainer-desktop.webp 1x, img/images/4-trainer-desktop2x.webp 2x" width="260" height="294" type="image/webp">
+                      <source media="(min-width: 768px)"
+                              srcset="img/images/4-trainer-desktop.webp 1x, img/images/4-trainer-desktop2x.webp 2x" width="268" height="294" type="image/webp">
+                      <source media="(min-width: 280px)"
+                              srcset="img/images/4-trainer-desktop.webp 1x, img/images/4-trainer-desktop2x.webp 2x" width="226" height="274" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/images/4-trainer-desktop.jpg 1x, img/images/4-trainer-desktop2x.jpg 2x" width="268" height="294">
+                      <source media="(min-width: 280px)" srcset="img/images/4-trainer-desktop.jpg 1x, img/images/4-trainer-desktop2x.jpg 2x" width="226" height="274">
+                      <img src="img/images/4-trainer-desktop.jpg" srcset="img/images/4-trainer-desktop2x.jpg 2x" width="260" height="294" alt="тренер Мария Кетова">
+                    </picture>
+                    <div class="trainers__back">
+                      <h3>Мария Кетова</h3>
+                      <span>CrossFit</span>
+                      <ul class="trainers__peculiarity">
+                        <li>Certified Level&nbsp;3 Trainer</li>
+                        <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                        <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
             </div>
+            <button class="swiper-button-prev trainers__button-prev">
+              <svg width="16" height="32">
+                <use xlink:href="./img/sprite.svg#slider-arrow"></use>
+              </svg>
+            </button>
+            <button class="swiper-button-next trainers__button-next">
+              <svg width="16" height="32">
+                <use xlink:href="./img/sprite.svg#slider-arrow"></use>
+              </svg>
+            </button>
           </div>
         </section>
 
@@ -323,6 +504,44 @@
         <section class="review">
           <div class="review__container container">
             <h2>Отзывы</h2>
+            <div class="review__inner">
+              <div class="review__swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture>
+                      <source media="(min-width: 768px)"
+                              srcset="./img/images/review-avatar.webp 1x, ./img/images/review-avatar2x.webp 2x" width="80" height="80" type="image/webp">
+                      <img src="./img/images/review-avatar.png" srcset="./img/images/review-avatar2x.png 2x" width="80" height="80" alt="аватар отзыва">
+                    </picture>
+                    <span>Анна Орлова</span>
+                    <p>
+                      &laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source media="(min-width: 280px)"
+                              srcset="./img/images/review-avatar.webp 1x, ./img/images/review-avatar2x.webp 2x" width="80" height="80" type="image/webp">
+                      <img src="./img/images/review-avatar.png" srcset="./img/images/review-avatar2x.png 2x" width="80" height="80" alt="аватар отзыва">
+                    </picture>
+                    <span>Анна Орлова</span>
+                    <p>
+                      &laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="swiper-button-prev review__button-prev">
+              <svg width="16" height="32">
+                <use xlink:href="./img/sprite.svg#slider-arrow"></use>
+              </svg>
+            </button>
+            <button class="swiper-button-next review__button-next">
+              <svg width="16" height="32">
+                <use xlink:href="./img/sprite.svg#slider-arrow"></use>
+              </svg>
+            </button>
           </div>
         </section>
 
@@ -344,52 +563,47 @@
                 <button class="contacts__btn btn" type="submit">отправить</button>
               </form>
             </div>
-            <address class="contacts__address">
+            <section class="contacts__address">
               <h2>Контакты</h2>
               <div class="contacts__content">
-                <div class="contacts__text">
+                <address class="contacts__text">
                   <p>Адрес:</p>
                   <span>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</span>
                   <p>График работы:</p>
                   <span>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</span>
-                </div>
-                <div class="contacts__links">
+                </address>
+                <address class="contacts__links">
                   <p>Телефон:</p>
-                  <a href="tel:88005555555"><nobr>8-800-555-55-55</nobr></a>
+                  <a href="tel:88005555555">8-800-555-55-55</a>
                   <p>Email:</p>
                   <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-                </div>
+                </address>
               </div>
-            </address>
+            </section>
           </div>
         </section>
       </main>
       <footer class="footer">
         <div class="footer__container container">
-          <ul class="footer__nav-list">
-            <li class="footer__logo" data-order="1">
-              <a href="#">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/svg/logotype.svg" width="88" height="32">
-                  <source media="(min-width: 768px)" srcset="./img/svg/logotype-tablet.svg" width="82" height="18">
-                  <source media="(min-width: 280px)" srcset="./img/svg/logotype-mobile.svg" width="68" height="15">
-                  <img src="./img/svg/logotype.svg" width="122" height="22" alt="логотип 'Supergym'">
-                </picture>
-              </a>
-            </li>
-            <li data-order="3">
+          <div class="footer__logo">
+            <a href="#">
+              <img src="./img/svg/logotype.svg" width="122" height="22" alt="логотип 'Supergym'">
+            </a>
+          </div>
+          <ul class="footer__site-list" data-list="footer-list">
+            <li class="footer__site-link">
               <a href="#">Услуги</a>
             </li>
-            <li data-order="5">
+            <li class="footer__site-link">
               <a href="#">Абонементы</a>
             </li>
-            <li data-order="2">
+            <li class="footer__site-link">
               <a href="#">Акции</a>
             </li>
-            <li data-order="4">
+            <li class="footer__site-link">
               <a href="#">Тренеры</a>
             </li>
-            <li data-order="6">
+            <li class="footer__site-link">
               <a href="#">Расписание</a>
             </li>
           </ul>

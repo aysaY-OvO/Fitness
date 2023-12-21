@@ -1,14 +1,164 @@
 .review__container {
-  height: 450px;
-  padding-bottom: 120px;
-  background-color: $color-blue;
+  padding-bottom: 105px;
+  padding-top: 12px;
+  position: relative;
+
+  max-width: 765px;
 
   @include vp-1199 {
-    height: 398px;
+    max-width: 656px;
+    padding-top: 0;
+    padding-bottom: 83px;
   }
 
   @include vp-767 {
-    padding-bottom: 0;
-    height: 420px;
+    max-width: 258px;
+    padding-bottom: 52px;
+  }
+}
+
+.review__container .swiper {
+  max-width: 765px;
+
+  @include vp-1199 {
+    max-width: 656px;
+  }
+
+  @include vp-767 {
+    max-width: 258px;
+  }
+}
+
+.review__container h2 {
+  font-family: $ff-title;
+  font-size: 54px;
+  line-height: 1;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 45px;
+  letter-spacing: 1.6px;
+
+  @include vp-1199 {
+    font-size: 42px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+  }
+}
+
+.review__swiper picture {
+  display: block;
+  grid-row: 1 / 3;
+
+  @include vp-767 {
+    grid-row: 1;
+    justify-self: end;
+  }
+}
+
+.review__swiper img {
+  width: 80px;
+  height: 80px;
+  margin-top: 5px;
+
+  @include vp-1199 {
+    margin-top: 0;
+    margin-left: 3px;
+  }
+
+  @include vp-767 {
+    width: 68px;
+    height: 68px;
+    margin-left: 0;
+    position: relative;
+    left: 5px;
+  }
+}
+
+.review__swiper .swiper-slide {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  padding: 56px 62px 58px;
+  background-color: $color-blue;
+  color: $color-default-white;
+  column-gap: 28px;
+  box-sizing: border-box;
+  align-items: start;
+
+  @include vp-1199 {
+    padding-top: 60px;
+    column-gap: 32px;
+  }
+
+  @include vp-767 {
+    padding: 40px 25px 35px;
+    column-gap: 20px;
+    row-gap: 0;
+  }
+}
+
+.review__swiper span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 16px;
+  grid-row: 1;
+  grid-column: 2;
+
+  @include vp-767 {
+    grid-row: 1;
+    line-height: 1.7;
+  }
+}
+
+.review__swiper p {
+  margin: 0;
+  line-height: 1.4;
+  grid-column: 2;
+
+  @include vp-767 {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+}
+
+.review__button-prev,
+.review__button-next {
+  top: 213px;
+
+  @include vp-1199 {
+    top: 191px;
+  }
+
+  @include vp-767 {
+    top: 235px;
+  }
+}
+
+.review__button-prev {
+  left: 40px;
+
+  @include vp-1199 {
+    left: -18px;
+  }
+
+  @include vp-767 {
+    left: -22px;
+  }
+}
+
+.review__button-next {
+  right: 40px;
+
+  @include vp-1199 {
+    right: -18px;
+  }
+
+  @include vp-767 {
+    right: -22px;
   }
 }

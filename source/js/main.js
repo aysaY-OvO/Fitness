@@ -3,13 +3,14 @@ import {Form} from './modules/form-validate/form.js';
 import {initTabs} from './modules/tabs/init-tabs.js';
 
 // ---------------------------------
-const playVideo = document.querySelector('[data-button="play-video"]');
+
 
 window.addEventListener('DOMContentLoaded', () => {
 
+  const playVideo = document.querySelector('[data-button="play-video"]');
+
   // Utils
   // ---------------------------------
-
   iosVhFix();
 
   // Modules
@@ -22,7 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
       evt.target.classList.toggle('no-pseudo');
       evt.target.innerHTML = '<iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=5WMu_IILpRD6bLQr" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
     });
-
     initTabs();
     const form = new Form();
     window.form = form;

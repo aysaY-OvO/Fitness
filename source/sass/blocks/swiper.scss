@@ -1,0 +1,157 @@
+/**
+ * Swiper 8.4.7
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * https://swiperjs.com
+ *
+ * Copyright 2014-2023 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: January 30, 2023
+ */
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-android .swiper-slide,
+.swiper-wrapper {
+  transform: translate3d(0px, 0, 0);
+}
+
+.swiper-pointer-events {
+  touch-action: pan-y;
+}
+
+.swiper-pointer-events.swiper-vertical {
+  touch-action: pan-x;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: auto;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  box-sizing: content-box;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  overflow: hidden;
+
+  &::after {
+    content: attr(data-name);
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-default-white;
+    position: absolute;
+    z-index: 5;
+    align-self: flex-end;
+    bottom: 25px;
+  }
+
+  @include focus {
+    &::after {
+      content: "";
+    }
+  }
+
+  @include hover {
+    &::after {
+      content: "";
+    }
+  }
+
+  @include hover-focus {
+    &::after {
+      content: "";
+    }
+  }
+
+  @include vp-1199 {
+    &::after {
+      bottom: 27px;
+    }
+  }
+}
+
+.swiper-slide:hover .trainers__back {
+  bottom: 0;
+}
+
+.swiper-slide:focus .trainers__back {
+  bottom: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background-color: $color-transparent;
+  border: none;
+
+  @include hover {
+    use {
+      stroke: $color-dark-blue;
+    }
+  }
+
+  @include hover-focus {
+    use {
+      stroke: $color-dark-blue;
+    }
+  }
+
+  @include vp-767 {
+    svg {
+      width: 10px;
+      height: 19px;
+    }
+  }
+}
+
+.swiper-button-next {
+  transform: rotate(180deg);
+}
+
+.swiper-button-next use,
+.swiper-button-prev use {
+  stroke: $color-slider-arrow;
+}
+
+.swiper-button-disabled {
+  cursor: auto;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+  height: auto;
+}
+.swiper-autoheight .swiper-wrapper {
+  align-items: flex-start;
+  transition-property: transform, height;
+}

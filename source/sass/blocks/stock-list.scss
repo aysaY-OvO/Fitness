@@ -54,11 +54,8 @@
 
 .stock-list p {
   flex-grow: 1;
-  margin: 0;
-
-  @include vp-767 {
-    margin-bottom: 10px;
-  }
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .stock-list__btn {

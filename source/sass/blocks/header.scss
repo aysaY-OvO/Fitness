@@ -1,22 +1,26 @@
 .header {
   background: $gradient-header;
+}
+
+.header__blur {
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(50px);
+  background-size: 100%;
+}
+
+.header__container {
   padding-bottom: 40px;
-  padding-top: 34px;
+  padding-top: 18px;
 
   @include vp-1199 {
-    padding-top: 38px;
+    padding-top: 32px;
     padding-bottom: 100px;
   }
 
   @include vp-767 {
+    padding-right: 10px;
     padding-top: 15px;
     padding-bottom: 80px;
-  }
-}
-
-.header__container {
-  @include vp-767 {
-    padding-right: 10px;
   }
 }
 
@@ -35,10 +39,19 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  position: relative;
+  top: 12px;
+
+  @include vp-1199 {
+    top: 9px;
+  }
+
+  @include vp-767 {
+    top: 0;
+  }
 }
 
 .header__logo {
-  padding-top: 5px;
   width: 460px;
 
   @include vp-767 {
@@ -46,14 +59,37 @@
   }
 }
 
+.header__logo img {
+  position: relative;
+  z-index: 1;
+  width: 122px;
+  height: 44px;
+
+  @include vp-1199 {
+    width: 82px;
+    height: 17px;
+  }
+
+  @include vp-767 {
+    width: 69px;
+    height: 24px;
+  }
+}
+
 .header__phone {
   position: relative;
   width: 200px;
+  padding-top: 5px;
   padding-left: 47px;
   z-index: 100;
 
   @include vp-1199 {
     padding-left: 59px;
+    bottom: 10px;
+  }
+
+  @include vp-767 {
+    bottom: 5px;
   }
 
   @include vp-767 {
@@ -132,7 +168,7 @@
     grid-template-columns: repeat(2, minmax(auto, 1fr));
     width: 100%;
     justify-items: center;
-    margin-top: 75px;
+    margin-top: 70px;
   }
 }
 
@@ -155,6 +191,8 @@
 }
 
 .header__title {
+  position: relative;
+  z-index: 10;
   color: $color-default-white;
   font-family: $ff-title;
   padding-right: 38px;
@@ -165,6 +203,7 @@
 
   @include vp-767 {
     padding-right: 0;
+    max-width: 185px;
   }
 }
 

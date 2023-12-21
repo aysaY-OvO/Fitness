@@ -1,5 +1,6 @@
 .contacts {
   background: linear-gradient(to right, $color-dark-blue 50%, $color-default-white 50%);
+  border-top: 1px solid $color-input-border;
 
   @include vp-1199 {
     background: none;
@@ -35,14 +36,14 @@
 
 //Form
 .contacts__form {
-  padding: 70px 170px 67px 100px;
+  padding: 68px 170px 67px 100px;
 
   @media screen and (min-width: 1200px) and (max-width: 1325px) {
     padding-right: 100px;
   }
 
   @include vp-1199 {
-    padding: 67px 148px;
+    padding: 65px 148px 67px;
     background-color: $color-dark-blue;
   }
 
@@ -101,23 +102,29 @@
 
 //Address
 .contacts__address {
-  padding: 63px 100px 50px 120px;
-  font-style: normal;
+  padding: 62px 100px 50px 120px;
 
   @include vp-1199 {
-    padding: 67px 30px 66px 0;
+    position: relative;
+    right: 15px;
+    padding: 66px 30px 66px;
     margin: 0 auto;
   }
 
   @include vp-767 {
-    padding: 65px 15px 70px;
+    right: 0;
+    padding: 66px 15px 68px;
     margin: 0;
   }
 }
 
+.contacts__address address {
+  font-style: normal;
+}
+
 .contacts__address h2 {
   font-weight: 600;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
 
   @include vp-1199 {
     margin-bottom: 32px;
@@ -200,7 +207,6 @@
   display: block;
   color: $color-dark-blue;
   font-size: 14px;
-  width: min-content;
 
   @include hover {
     opacity: 0.5;
