@@ -389,7 +389,7 @@ template {
   font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/AlumniSans-Semibold.woff2") format("woff2"), url("../fonts/AlumniSans-Semibold.woff") format("woff");
+  src: url("../fonts/AlumniSans-SemiBold.woff2") format("woff2"), url("../fonts/AlumniSans-SemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/AlumniSans-Extrabold.woff2") format("woff2"), url("../fonts/AlumniSans-Extrabold.woff") format("woff");
+  src: url("../fonts/AlumniSans-ExtraBold.woff2") format("woff2"), url("../fonts/AlumniSans-ExtraBold.woff") format("woff");
 }
 
 @font-face {
