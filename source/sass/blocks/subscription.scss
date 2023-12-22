@@ -4,16 +4,16 @@
 
   &::after {
     content: "";
-    background: url("../img/images/subscription-desktop.png") no-repeat;
-    width: 287px;
-    height: 430px;
     position: absolute;
+    background: url("../img/images/subscription-decor.png") no-repeat;
+    width: 290px;
+    height: 500px;
     right: 0;
-    bottom: -85px;
+    bottom: -148px;
     z-index: 1;
 
     @include retina {
-      background: url("../img/images/subscription-desktop@2x.png") no-repeat;
+      background: url("../img/images/subscription-decor@2x.png") no-repeat;
       background-size: cover;
     }
   }
@@ -21,14 +21,9 @@
   @include vp-1199 {
     &::after {
       width: 350px;
-      height: 410px;
-      bottom: -87px;
-      background: url("../img/images/subscription-tablet.png") no-repeat;
-
-      @include retina {
-        background: url("../img/images/subscription-tablet@2x.png") no-repeat;
-        background-size: cover;
-      }
+      height: 448px;
+      right: 0;
+      bottom: -125px;
     }
   }
 

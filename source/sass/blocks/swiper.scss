@@ -75,7 +75,7 @@
     }
   }
 
-  &:hover {
+  @include hover {
     &::after {
       display: none;
     }
