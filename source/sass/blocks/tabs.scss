@@ -70,6 +70,50 @@
   z-index: 100;
 
   transition: height 0.3s;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../img/images/subscription-decor.png") no-repeat;
+    width: 290px;
+    height: 500px;
+    right: -100px;
+    bottom: -270px;
+    z-index: -1;
+
+    @include retina {
+      background: url("../img/images/subscription-decor@2x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-1199 {
+    &::after {
+      width: 350px;
+      height: 448px;
+      right: -45px;
+      bottom: -230px;
+    }
+  }
+
+  @include vp-767 {
+    &::after {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    &::after {
+      width: 450px;
+    }
+  }
+
+  @media screen and (min-width: 2250px) {
+    &::after {
+      right: -260px;
+    }
+  }
 }
 
 .tabs__element {
@@ -77,13 +121,13 @@
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  transition: opacity .3s ease-in, visibility .3s ease-in;
+  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
   width: 100%;
   list-style-type: none;
   justify-content: space-around;
   flex-wrap: wrap;
   column-gap: 15px;
-  row-gap: 40px;
+  row-gap: 38px;
   margin: 0 auto;
   padding: 0;
 
@@ -128,7 +172,7 @@
 
     .btn {
       border: none;
-      padding: 20px 46px;
+      padding: 27px 46px;
       background: $gradient-tabs-button;
       color: $color-default-white;
       opacity: 1;
@@ -140,7 +184,7 @@
 
     .btn {
       border: none;
-      padding: 20px 46px;
+      padding: 27px 46px;
       background: $gradient-tabs-button;
       color: $color-default-white;
       opacity: 1;
@@ -157,7 +201,7 @@
 
     @include hover-focus {
       .btn {
-        padding: 20px 42px;
+        padding: 26px 42px;
       }
     }
   }
@@ -191,48 +235,54 @@
   font-size: 16px;
   color: $color-tabs-time;
   margin-top: 0;
-  margin-bottom: 80px;
+  margin-bottom: 64px;
 
   @include vp-767 {
-    margin-bottom: 58px;
+    margin-bottom: 47px;
   }
 }
 
-.tabs__item span {
-  font-size: 60px;
-  font-weight: 700;
-  color: $color-dark-blue;
-  flex-grow: 1;
+.tabs__price {
   position: relative;
-  z-index: 100;
+  flex-grow: 1;
+  margin-bottom: 30px;
 
   &::before {
     content: attr(data-price);
-    position: relative;
-    color: $color-tabs-price;
-    margin-right: 14px;
-    z-index: 100;
-  }
-
-  &::after {
-    content: attr(data-price);
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     color: $color-price-bg;
     font-size: 100px;
-    bottom: 85%;
+    bottom: -8%;
     left: 50%;
-    transform: translate(-52%, -53%);
-
-    @include vp-767 {
-      font-size: 80px;
-    }
+    transform: translate(-50%, -10%);
   }
 
   @include vp-767 {
-    font-size: 48px;
-    letter-spacing: -2px;
+    margin-bottom: 27px;
+
+    &::before {
+      font-size: 80px;
+    }
   }
+}
+
+.tabs__price p {
+  display: block;
+  font-size: 60px;
+  position: relative;
+  font-weight: 700;
+  color: $color-dark-blue;
+  margin: 0;
+
+  @include vp-767 {
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+}
+
+.tabs__price span {
+  color: $color-tabs-price;
 }
 
 .tabs__item .btn {
@@ -240,7 +290,7 @@
   align-content: center;
   border: 2px solid $color-dark-blue;
   color: $color-dark-blue;
-  padding: 18px 44px;
+  padding: 25px 44px;
   margin-bottom: 5px;
   width: 100%;
   transition: 0.4s color;
@@ -248,7 +298,7 @@
 
   @include hover-focus {
     border: none;
-    padding: 20px 46px;
+    padding: 27px 46px;
     background: $gradient-tabs-button;
     color: $color-default-white;
     opacity: 1;
@@ -256,10 +306,10 @@
 
   @include vp-1199 {
     margin-bottom: 0;
-    padding: 18px 40px;
+    padding: 24px 40px;
 
     @include hover-focus {
-      padding: 20px 42px;
+      padding: 26px 42px;
     }
   }
 }

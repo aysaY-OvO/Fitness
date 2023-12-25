@@ -29,27 +29,35 @@
   }
 }
 
-.main-banner__content span {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1;
-  display: flex;
-  flex-direction: column;
-
-  &::after {
-    content: attr(data-price);
-    font-size: 70px;
-    font-weight: 700;
-  }
-}
-
 .main-banner__content p {
   flex-grow: 1;
   font-size: 18px;
+  margin-top: 5px;
+  line-height: 1.4;
 
   @include vp-767 {
-    padding-bottom: 9px;
+    margin-top: 0;
+    margin-bottom: 35px;
   }
+}
+
+.main-banner__price p {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
+}
+
+.main-banner__price span {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .main-banner__btn {

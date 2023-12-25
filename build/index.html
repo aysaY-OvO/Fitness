@@ -9,7 +9,6 @@
     <link rel="preload" as="font" href="./fonts/RobotoCondensed-Light.woff2" crossorigin="">
     <link rel="preload" as="font" href="./fonts/RobotoCondensed-Regular.woff2" crossorigin="">
     <link rel="preload" as="font" href="./fonts/RobotoCondensed-Bold.woff2" crossorigin="">
-    <link rel="preload" as="font" href="./fonts/Rouble.woff2" crossorigin="">
     <meta name="description" content="Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.">
     <title>SUPERGYM</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -37,7 +36,7 @@
                   <li>Кардио-зона</li>
                 </ul>
                 <div class="header__title">
-                  <p>омск</p>
+                  <p>Омск</p>
                   <h1>Фитнес <br> центр</h1>
                 </div>
                 <a href="#subscription" class="header__button btn">Купить абонемент</a>
@@ -61,11 +60,17 @@
           <div class="about__container container">
             <div class="about__text">
               <h2>Тренажерный зал</h2>
-              <span>Просторный зал площадью 900&nbsp;кв/м</span>
+              <div class="about__subtitle">
+                <p>Просторный зал площадью 900&nbsp;кв/м</p>
+              </div>
               <p>
                 Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
               </p>
-              <p data-text="В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий."></p>
+              <div class="about__text-tablet-hidden">
+                <p>
+                  В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+                </p>
+              </div>
             </div>
             <div class="about__media">
               <picture>
@@ -79,19 +84,12 @@
                 <source media="(min-width: 280px)" srcset="./img/images/about-mobile.jpg 1x, ./img/images/about-mobile@2x.jpg 2x" width="320" height="313">
                 <img src="./img/images/about-desktop.jpg" alt="фото тренажерного зала" srcset="./img/images/about-desktop2x.jpg 2x" width="660" height="401">
               </picture>
-              <button type="button" class="about__video" data-button="play-video" aria-label="включить видео">
-                <picture>
-                  <source media="(min-width: 1200px)"
-                          srcset="./img/images/video-preview-desktop.webp 1x, ./img/images/video-preview-desktop@2x.webp 2x" width="364" height="228" type="image/webp">
-                  <source media="(min-width: 768px)"
-                          srcset="./img/images/video-preview-tablet.webp 1x, ./img/images/video-preview-tablet@2x.webp 2x" width="266" height="167" type="image/webp">
-                  <source media="(min-width: 280px)"
-                          srcset="./img/images/video-preview-mobile.webp 1x, ./img/images/video-preview-mobile@2x.webp 2x" width="320" height="167" type="image/webp">
-                  <source media="(min-width: 768px)" srcset="./img/images/video-preview-tablet.jpg 1x, ./img/images/video-preview-tablet@2x.jpg 2x" width="266" height="167">
-                  <source media="(min-width: 280px)" srcset="./img/images/video-preview-mobile.jpg 1x, ./img/images/video-preview-mobile@2x.jpg 2x" width="320" height="167">
-                  <img src="./img/images/video-preview-desktop.jpg" srcset="./img/images/video-preview-desktop@2x.jpg 2x" width="364" height="228" alt="">
-                </picture>
-              </button>
+              <div class="about__video">
+                <iframe width="364" height="228" data-video="about-video" src="https://www.youtube.com/embed/9TZXsZItgdw?si=5WMu_IILpRD6bLQr" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="about__video-preview" data-video-preview>
+                  <button type="button" class="about__video-btn" data-button="play-video" aria-label="включить видео"></button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -110,19 +108,25 @@
                   <li class="tabs__item">
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
-                    <span data-price="5000">₽</span>
+                    <div class="tabs__price" data-price="5000">
+                      <p><span>5000</span>&nbsp;₽</p>
+                    </div>
                     <a href="#" class="btn">купить абонемент</a>
                   </li>
                   <li class="tabs__item">
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00 </p>
-                    <span data-price="1700">₽</span>
+                    <div class="tabs__price" data-price="1700">
+                      <p><span>1700</span>&nbsp;₽</p>
+                    </div>
                     <a href="#" class="btn">купить абонемент</a>
                   </li>
                   <li class="tabs__item">
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00 </p>
-                    <span data-price="2700">₽</span>
+                    <div class="tabs__price" data-price="2700">
+                      <p><span>2700</span>&nbsp;₽</p>
+                    </div>
                     <a href="#" class="btn">купить абонемент</a>
                   </li>
                 </ul>
@@ -130,19 +134,25 @@
                   <li class="tabs__item">
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
-                    <span data-price="25000">₽</span>
+                    <div class="tabs__price" data-price="25000">
+                      <p><span>25000</span>&nbsp;₽</p>
+                    </div>
                     <a href="#" class="btn">купить абонемент</a>
                   </li>
                   <li class="tabs__item">
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00 </p>
-                    <span data-price="8000">₽</span>
+                    <div class="tabs__price" data-price="8000">
+                      <p><span>8000</span>&nbsp;₽</p>
+                    </div>
                     <a href="#" class="btn">купить абонемент</a>
                   </li>
                   <li class="tabs__item">
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00 </p>
-                    <span data-price="13000">₽</span>
+                    <div class="tabs__price" data-price="12000">
+                      <p><span>12000</span>&nbsp;₽</p>
+                    </div>
                     <a href="#" class="btn">купить абонемент</a>
                   </li>
                 </ul>
@@ -150,19 +160,25 @@
                   <li class="tabs__item">
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
-                    <span data-price="57000">₽</span>
+                    <div class="tabs__price" data-price="57000">
+                      <p><span>57000</span>&nbsp;₽</p>
+                    </div>
                     <a href="#" class="btn">купить абонемент</a>
                   </li>
                   <li class="tabs__item">
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00 </p>
-                    <span data-price="18000">₽</span>
+                    <div class="tabs__price" data-price="18000">
+                      <p><span>18000</span>&nbsp;₽</p>
+                    </div>
                     <a href="#" class="btn">купить абонемент</a>
                   </li>
                   <li class="tabs__item">
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00 </p>
-                    <span data-price="28000">₽</span>
+                    <div class="tabs__price" data-price="28000">
+                      <p><span>28000</span>&nbsp;₽</p>
+                    </div>
                     <a href="#" class="btn">купить абонемент</a>
                   </li>
                 </ul>
@@ -420,7 +436,9 @@
                     и толпучки
                   </p>
                 </div>
-                <span data-number="900">кв/м</span>
+                <div class="advantages__number">
+                  <p><span>900</span>кв/м</p>
+                </div>
               </li>
               <li class="advantages__list-item">
                 <div class="advantages__list-content">
@@ -430,10 +448,14 @@
                     своей машины на нашей парковке
                   </p>
                 </div>
-                <span data-number="70">машин</span>
+                <div class="advantages__number">
+                  <p><span>70</span>машин</p>
+                </div>
               </li>
               <li class="advantages__list-item advantages__list-item--main">
-                <span data-number="100">Тренажеров</span>
+                <div class="advantages__main-number">
+                  <h3><span>100</span>Тренажеров</h3>
+                </div>
                 <p>
                   Современные тренажеры <br>
                   на все группы мышц
@@ -447,7 +469,9 @@
                     душевые, фен, Wi-Fi, кулеры
                   </p>
                 </div>
-                <span data-number="350">мест</span>
+                <div class="advantages__number">
+                  <p><span>350</span>мест</p>
+                </div>
               </li>
               <li class="advantages__list-item">
                 <div class="advantages__list-content">
@@ -457,7 +481,9 @@
                     с профессиональным тренером
                   </p>
                 </div>
-                <span data-number="5+">лет</span>
+                <div class="advantages__number">
+                  <p><span>5+</span>лет</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -469,7 +495,9 @@
             <div class="stock__content-wrapper">
               <div class="stock__main-banner main-banner">
                 <div class="main-banner__content">
-                  <span data-price="4999">Год</span>
+                  <div class="main-banner__price">
+                    <p><span>4999</span>Год</p>
+                  </div>
                   <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
                   <a href="#" class="main-banner__btn btn">подробнее</a>
                 </div>
@@ -513,7 +541,9 @@
                               srcset="./img/images/review-avatar.webp 1x, ./img/images/review-avatar2x.webp 2x" width="80" height="80" type="image/webp">
                       <img src="./img/images/review-avatar.png" srcset="./img/images/review-avatar2x.png 2x" width="80" height="80" alt="аватар отзыва">
                     </picture>
-                    <span>Анна Орлова</span>
+                    <div class="review__name">
+                      <p>Анна Орлова</p>
+                    </div>
                     <p>
                       &laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
                     </p>
@@ -524,7 +554,9 @@
                               srcset="./img/images/review-avatar.webp 1x, ./img/images/review-avatar2x.webp 2x" width="80" height="80" type="image/webp">
                       <img src="./img/images/review-avatar.png" srcset="./img/images/review-avatar2x.png 2x" width="80" height="80" alt="аватар отзыва">
                     </picture>
-                    <span>Анна Орлова</span>
+                    <div class="review__name">
+                      <p>Анна Орлова</p>
+                    </div>
                     <p>
                       &laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
                     </p>
@@ -550,35 +582,37 @@
             <div class="contacts__form" data-form-validate>
               <h2>Бесплатное занятие</h2>
               <form action="https://echo.htmlacademy.ru/">
-                <div class="contacts__inputs-wrapper">
-                  <div class="contacts__input contacts__name custom-input" data-message-base="Обязательное поле" data-required data-validate-type="text">
-                    <label class="visually-hidden" for="name">имя</label>
-                    <input type="text" name="name" id="name" placeholder="Имя" autocomplete="off" required>
-                  </div>
-                  <div class="contacts__input contacts__phone custom-input" data-message-base="Обязательное поле" data-required data-validate-type="phone">
-                    <label class="visually-hidden" for="phone">телефон</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Телефон" autocomplete="off" required>
-                  </div>
+                <div class="contacts__input contacts__name custom-input" data-message-base="Обязательное поле" data-required data-validate-type="text">
+                  <label class="visually-hidden" for="name">имя</label>
+                  <input type="text" name="name" id="name" placeholder="Имя" autocomplete="off" required>
+                </div>
+                <div class="contacts__input contacts__phone custom-input" data-message-base="Обязательное поле" data-required data-validate-type="phone">
+                  <label class="visually-hidden" for="phone">телефон</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" autocomplete="off" required>
                 </div>
                 <button class="contacts__btn btn" type="submit">отправить</button>
               </form>
             </div>
             <section class="contacts__address">
               <h2>Контакты</h2>
-              <div class="contacts__content">
-                <address class="contacts__text">
+              <address class="contacts__content">
+                <div class="contacts__text">
                   <p>Адрес:</p>
-                  <span>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</span>
+                  <div class="contacts__value">
+                    <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
+                  </div>
                   <p>График работы:</p>
-                  <span>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</span>
-                </address>
-                <address class="contacts__links">
+                  <div class="contacts__value">
+                    <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+                  </div>
+                </div>
+                <div class="contacts__links">
                   <p>Телефон:</p>
                   <a href="tel:88005555555">8-800-555-55-55</a>
                   <p>Email:</p>
                   <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-                </address>
-              </div>
+                </div>
+              </address>
             </section>
           </div>
         </section>

@@ -7,7 +7,9 @@ import {initTabs} from './modules/tabs/init-tabs.js';
 
 window.addEventListener('DOMContentLoaded', () => {
 
-  const playVideo = document.querySelector('[data-button="play-video"]');
+  const aboutVideo = document.querySelector('[data-video="about-video"]');
+  const aboutPlayVideo = document.querySelector('[data-button="play-video"]');
+  const aboutVideoPreview = document.querySelector('[data-video-preview]');
 
   // Utils
   // ---------------------------------
@@ -19,9 +21,11 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    playVideo.addEventListener('click', (evt) => {
-      evt.target.classList.toggle('no-pseudo');
-      evt.target.innerHTML = '<iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=5WMu_IILpRD6bLQr" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+    aboutPlayVideo.addEventListener('click', () => {
+      aboutVideoPreview.style.display = 'none';
+      const videoSrc = aboutVideo.getAttribute('src');
+      aboutVideo.setAttribute('src', videoSrc + '&autoplay=1');
+      aboutVideo.style.display = 'block';
     });
     initTabs();
     const form = new Form();

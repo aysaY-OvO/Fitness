@@ -13,13 +13,13 @@ $color-blue:                        #1c3374;
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 $color-promo-image:                 #010245;
-$color-tabs-controls:               rgba(16, 38, 84, 0.50);
-$color-tabs-controls-border:        rgba(120, 120, 120, 0.20);
+$color-tabs-controls:               rgba(16, 38, 84, 0.5);
+$color-tabs-controls-border:        rgba(120, 120, 120, 0.2);
 $color-active-tab:                  #d10a42;
 $color-tabs-time:                   #495a7d;
 $color-tabs-price:                  #103aae;
-$color-price-bg:                    rgba(232,232,232, 0.48);
-$color-advantages-border:           rgba(209, 10, 66, 0.20);
+$color-price-bg:                    rgba(232, 232, 232, 0.48);
+$color-advantages-border:           rgba(209, 10, 66, 0.2);
 $color-input-border:                #74819c;
 $color-footer-bg:                   #030a1a;
 $color-slider-arrow:                #afafaf;
@@ -28,9 +28,9 @@ $color-slider-speciality:           #b6bdcc;
 
 // Gradient
 
-$gradient-tabs-button:              linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+$gradient-tabs-button:              linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
 $gradient-tabs-border:              linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 14px) calc(100% - 14px) no-repeat, linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-$gradient-header:                   conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.23633825778961deg, #b80027 313.3060026168823deg);
+$gradient-header:                   conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 313.31deg);
 $gradient-advantages-number:        linear-gradient(143deg, #d10a42 0%, #0041ca 87.33%);
 
 // Typography
