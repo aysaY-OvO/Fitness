@@ -58,13 +58,6 @@
 
 .about__video-preview {
   position: relative;
-  background: url("../img/images/video-preview-desktop.jpg") no-repeat;
-  background-size: cover;
-
-  @include retina {
-    background: url("../img/images/video-preview-desktop@2x.jpg") no-repeat;
-    background-size: cover;
-  }
 
   &::before {
     content: "";
@@ -77,6 +70,16 @@
     right: 0;
     bottom: 0;
     background: rgba(20, 54, 122, 0.5);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: url("../img/images/video-preview-desktop.jpg") no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: url("../img/images/video-preview-desktop@2x.jpg") no-repeat;
+      background-size: cover;
+    }
   }
 
   @include vp-1199 {

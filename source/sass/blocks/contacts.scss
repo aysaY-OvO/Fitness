@@ -41,14 +41,14 @@
 
 //Form
 .contacts__form {
-  padding: 68px 170px 67px 100px;
+  padding: 70px 170px 67px 100px;
 
   @media screen and (min-width: 1200px) and (max-width: 1325px) {
     padding-right: 100px;
   }
 
   @include vp-1199 {
-    padding: 67px 148px 67px;
+    padding: 70px 148px 67px;
     background-color: $color-dark-blue;
   }
 
@@ -108,13 +108,13 @@
   @include vp-1199 {
     position: relative;
     right: -21px;
-    padding: 69px 20px 57px;
+    padding: 65px 20px 57px;
     margin: 0 auto;
   }
 
   @include vp-767 {
     right: 0;
-    padding: 66px 15px 68px;
+    padding: 68px 15px 51px;
     margin: 0;
   }
 }
@@ -208,6 +208,10 @@
 
   @include vp-1199 {
     font-size: 18px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 17px;
   }
 }
 
