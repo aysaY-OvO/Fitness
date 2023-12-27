@@ -4,7 +4,6 @@ import './vendor/focus-visible-polyfill.js';
 
 const trainerSwiper = new Swiper('.trainers__swiper', {
   loop: true,
-  autoHeight: true,
   navigation: {
     nextEl: '.trainers__button-next',
     prevEl: '.trainers__button-prev',

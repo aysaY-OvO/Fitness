@@ -48,7 +48,7 @@
   }
 
   @include vp-1199 {
-    padding: 70px 148px 67px;
+    padding: 65px 148px 67px;
     background-color: $color-dark-blue;
   }
 
@@ -108,7 +108,7 @@
   @include vp-1199 {
     position: relative;
     right: -21px;
-    padding: 65px 20px 57px;
+    padding: 68px 20px 57px;
     margin: 0 auto;
   }
 
@@ -219,6 +219,7 @@
   display: block;
   color: $color-dark-blue;
   font-size: 14px;
+  width: fit-content;
 
   @include hover {
     opacity: 0.5;

@@ -49,6 +49,14 @@
     pointer-events: none;
   }
 
+  @include hover {
+    color: $color-dark-blue;
+  }
+
+  @include hover-focus {
+    color: $color-dark-blue;
+  }
+
   @include vp-1199 {
     font-size: 18px;
     padding: 14px 0;
@@ -117,38 +125,38 @@
 }
 
 .tabs__element {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   opacity: 0;
   visibility: hidden;
   position: absolute;
   transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
   width: 100%;
+  justify-items: center;
   list-style-type: none;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  column-gap: 15px;
+  column-gap: 40px;
   row-gap: 38px;
   margin: 0 auto;
   padding: 0;
-
-  @media screen and (max-width: 1500px) {
-    justify-content: space-between;
-  }
 
   &.is-active {
     opacity: 1;
     visibility: visible;
   }
 
+  @media screen and (min-width: 1200px) and (max-width: 1250px) {
+    column-gap: 20px;
+  }
+
   @include vp-1199 {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     padding: 0 118px;
-    justify-content: center;
+    justify-items: stretch;
   }
 
   @include vp-767 {
     padding: 0;
-    row-gap: 35px;
+    row-gap: 33px;
   }
 }
 
@@ -235,17 +243,17 @@
   font-size: 16px;
   color: $color-tabs-time;
   margin-top: 0;
-  margin-bottom: 64px;
+  margin-bottom: 53px;
 
   @include vp-767 {
-    margin-bottom: 47px;
+    margin-bottom: 42px;
   }
 }
 
 .tabs__price {
   position: relative;
   flex-grow: 1;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   &::before {
     content: attr(data-price);
@@ -259,7 +267,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 27px;
+    margin-bottom: 17px;
 
     &::before {
       font-size: 80px;
@@ -283,6 +291,7 @@
 
 .tabs__price span {
   color: $color-tabs-price;
+  line-height: 1.5;
 }
 
 .tabs__item .btn {
